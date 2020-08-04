@@ -35,10 +35,10 @@ public class GUIPerson extends JPanel implements ActionListener{
 	
 	JPanel cal = new JPanel();
 		
-    String [] months;
-    String [][] dates;
+    	String [] months;
+    	String [][] dates;
     
-    JSpinner state;
+    	JSpinner state;
     
 	JComboBox<String> month;
 	JComboBox<String> date;
@@ -59,85 +59,85 @@ public class GUIPerson extends JPanel implements ActionListener{
 	            {"1", "2", "3", "4", 
 	             "5", "6", "7", "8", 
 	             "9", "10", "11", "12" };
-	    dates = new String[12][];
-        dates[0] = new String []
+		dates = new String[12][];
+        	dates[0] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30", "31"};
-        dates[1] = new String []
+        	dates[1] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29"};
-        dates[2] = new String []
+        	dates[2] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30", "31"};
-        dates[3] = new String []
+        	dates[3] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30"};
-        dates[4] = new String []
+        	dates[4] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30", "31"};
-        dates[5] = new String []
+       		dates[5] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30"};
-        dates[6] = new String []
+        	dates[6] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30", "31"};
-        dates[7] = new String []
+        	dates[7] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30", "31"};
-        dates[8] = new String []
+        	dates[8] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30"};
-        dates[9] = new String []
+        	dates[9] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30", "31"};
-        dates[10] = new String []
+        	dates[10] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
                         "16", "17", "18", "19", "20", 
                         "21", "22", "23", "24", "25", 
                         "26", "27", "28", "29", "30"};
-        dates[11] = new String []
+        	dates[11] = new String []
                 {"1", "2", "3", "4", "5", 
                         "6", "7", "8", "9", "10", 
                         "11", "12", "13", "14", "15", 
@@ -211,89 +211,85 @@ public class GUIPerson extends JPanel implements ActionListener{
 	title.setLocation(220,10);
 	this.add(title);
 	
-    fName = new JLabel("First Name");
-    fName.setFont(appFontCat);
-    fName.setSize(100,20);
-    fName.setLocation(150,70);
-    this.add(fName);
+    	fName = new JLabel("First Name");
+    	fName.setFont(appFontCat);
+    	fName.setSize(100,20);
+    	fName.setLocation(150,70);
+    	this.add(fName);
     
-    fn = new JTextField();
-    fn.setFont(appFontTxt);
-    fn.setSize(190,20);
-    fn.setLocation(300,70);
-    this.add(fn);
+    	fn = new JTextField();
+   	fn.setFont(appFontTxt);
+    	fn.setSize(190,20);
+    	fn.setLocation(300,70);
+    	this.add(fn);
     
-    lName = new JLabel("Last Name");
-    lName.setFont(appFontCat);
-    lName.setSize(100,20);
-    lName.setLocation(150,100);
-    this.add(lName);
+    	lName = new JLabel("Last Name");
+    	lName.setFont(appFontCat);
+    	lName.setSize(100,20);
+    	lName.setLocation(150,100);
+    	this.add(lName);
     
-    ln = new JTextField();
-    ln.setFont(appFontTxt);
-    ln.setSize(190,20);
-    ln.setLocation(300, 100);
-    this.add(ln);
+    	ln = new JTextField();
+    	ln.setFont(appFontTxt);
+    	ln.setSize(190,20);
+    	ln.setLocation(300, 100);
+    	this.add(ln);
 
-    social = new JLabel("SSN");
-    social.setFont(appFontCat);
-    social.setSize(100,20);
-    social.setLocation(150, 130);
-    this.add(social);
+    	social = new JLabel("SSN");
+    	social.setFont(appFontCat);
+    	social.setSize(100,20);
+    	social.setLocation(150, 130);
+    	this.add(social);
    
-    try {
-    	MaskFormatter format = new MaskFormatter("###-##-####");
-    	ssn_1 = new JFormattedTextField(format);
-    	format.setPlaceholderCharacter('_');
-        ssn_1.setFont(appFontTxt);
-        ssn_1.setSize(190,20);
-        ssn_1.setLocation(300, 130);
+    	try {
+    		MaskFormatter format = new MaskFormatter("###-##-####");
+    		ssn_1 = new JFormattedTextField(format);
+    		format.setPlaceholderCharacter('_');
+        	ssn_1.setFont(appFontTxt);
+        	ssn_1.setSize(190,20);
+        	ssn_1.setLocation(300, 130);
     	
-    }
-    catch(ParseException ex){
+   	    }
+    	catch(ParseException ex){
     	
     	
-    }
-    this.add(ssn_1);
+	    }
+    	this.add(ssn_1);
       
-    id = new JLabel("Student ID");
-    id.setFont(appFontCat);
-    id.setSize(100,20);
-    id.setLocation(150, 160);
-    this.add(id);
+    	id = new JLabel("Student ID");
+    	id.setFont(appFontCat);
+    	id.setSize(100,20);
+    	id.setLocation(150, 160);
+    	this.add(id);
     
-    try {
-    	MaskFormatter format = new MaskFormatter("#######");
-
-    	format.setPlaceholderCharacter('_');
-    	id_1 = new JFormattedTextField(format);
-
-    	
-    }
-    catch(ParseException ex){
-    	System.out.println("Incorrect");
-    	
-    }
-    id_1.setFont(appFontTxt);
-    id_1.setSize(190,20);
-    id_1.setLocation(300, 160);
-    this.add(id_1);
+    	try {
+    		MaskFormatter format = new MaskFormatter("#######");
+    		format.setPlaceholderCharacter('_');
+    		id_1 = new JFormattedTextField(format);	
+    	    }
+        catch(ParseException ex){
+    		System.out.println("Incorrect");   	
+    	    }
+    	id_1.setFont(appFontTxt);
+    	id_1.setSize(190,20);
+    	id_1.setLocation(300, 160);
+    	this.add(id_1);
     
-    dob = new JLabel("DOB");
-    dob.setFont(appFontCat);
-    dob.setSize(200,20);
-    dob.setLocation(150,190);
-    this.add(dob);
-    /*
-    dob1 = new JTextField();
-    dob1.setFont(appFontTxt);
-    dob1.setSize(190,20);
-    dob1.setLocation(300, 190);
-    this.add(dob1);
-    */
-    /*
-    SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
-    try {
+    	dob = new JLabel("DOB");
+    	dob.setFont(appFontCat);
+    	dob.setSize(200,20);
+    	dob.setLocation(150,190);
+    	this.add(dob);
+    	/*
+    	dob1 = new JTextField();
+    	dob1.setFont(appFontTxt);
+    	dob1.setSize(190,20);
+    	dob1.setLocation(300, 190);
+    	this.add(dob1);
+    	*/
+    	/*
+    	SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+    	try {
     	//DateFormat format1 = new SimpleDateFormat("MM/dd/yyyy");
     	dob1 = new JFormattedTextField(sdf);
     	String str = dob1.getText();
@@ -304,40 +300,39 @@ public class GUIPerson extends JPanel implements ActionListener{
         dob1.setLocation(300, 190);
     	this.add(dob1);
     	throw new InvalidOCCCDateException();
-    }
+    	}
     catch(Exception e){      
     	//JOptionPane.showMessageDialog(null,"Invalid Date!");
-    }
-    */
-    try {
+   	 }
+    	*/
+   	 try {
     	MaskFormatter format = new MaskFormatter("##/##/####");
     	format.setPlaceholderCharacter('/');
     	dob1 = new JFormattedTextField(format);
-
-    }
-    catch(ParseException e) {
+    	}
+    	catch(ParseException e) {
     	System.out.println("Invalid Date!");
-    }
-    dob1.setFont(appFontTxt);
-    dob1.setSize(190,20);
-    dob1.setLocation(300, 190);
+    	}
+    	dob1.setFont(appFontTxt);
+    	dob1.setSize(190,20);
+    	dob1.setLocation(300, 190);
 	this.add(dob1);
-    String s1 = "<html> Please enter in the date format as U.S. or U.K.  </html>"; 
+    	String s1 = "<html> Please enter in the date format as U.S. or U.K.  </html>"; 
     
-    // set tooltip text 
-    dob1.setToolTipText(s1);
-    /*
-    month = new JComboBox<String>(months);
-    month.setFont(appFontTxt);
-    month.setSize(50,20);
-    month.setLocation(300,190);
-    this.add(month);
+    	// set tooltip text 
+    	dob1.setToolTipText(s1);
+    	/*
+    	month = new JComboBox<String>(months);
+    	month.setFont(appFontTxt);
+    	month.setSize(50,20);
+    	month.setLocation(300,190);
+    	this.add(month);
     
-    date = new JComboBox<String>(dates[0]);
-    date.setFont(appFontTxt);
-    date.setSize(60,20);
-    date.setLocation(350,190);
-    this.add(date);
+    	date = new JComboBox<String>(dates[0]);
+    	date.setFont(appFontTxt);
+    	date.setSize(60,20);
+    	date.setLocation(350,190);
+    	this.add(date);
     
 
     
@@ -346,146 +341,143 @@ public class GUIPerson extends JPanel implements ActionListener{
 	}
 
 	
-    year = new JComboBox(year_s.toArray()); 
-    year.setFont(appFontTxt); 
-    year.setSize(80, 20); 
-    year.setLocation(410, 190); 
-    this.add(year); 
+    	year = new JComboBox(year_s.toArray()); 
+    	year.setFont(appFontTxt); 
+    	year.setSize(80, 20); 
+    	year.setLocation(410, 190); 
+    	this.add(year); 
     
-    */
-    strt = new JLabel("Street");
-    strt.setFont(appFontCat);
-    strt.setSize(80,20);
-    strt.setLocation(150,220);
-    this.add(strt);
+    	*/
+    	strt = new JLabel("Street");
+    	strt.setFont(appFontCat);
+    	strt.setSize(80,20);
+    	strt.setLocation(150,220);
+    	this.add(strt);
     
-    str = new JTextField();
-    str.setFont(appFontTxt);
-    str.setSize(190,20);
-    str.setLocation(300, 220);
-    this.add(str);
+    	str = new JTextField();
+    	str.setFont(appFontTxt);
+    	str.setSize(190,20);
+    	str.setLocation(300, 220);
+    	this.add(str);
     
-    city = new JLabel("City");
-    city.setFont(appFontCat);
-    city.setSize(100,20);
-    city.setLocation(150,250);
-    this.add(city);
+    	city = new JLabel("City");
+    	city.setFont(appFontCat);
+    	city.setSize(100,20);
+    	city.setLocation(150,250);
+    	this.add(city);
     
-    ct = new JTextField();
-    ct.setFont(appFontTxt);
-    ct.setSize(190,20);
-    ct.setLocation(300, 250);
-    this.add(ct);
+    	ct = new JTextField();
+    	ct.setFont(appFontTxt);
+    	ct.setSize(190,20);
+    	ct.setLocation(300, 250);
+    	this.add(ct);
   
-    stat = new JLabel("State");
-    stat.setFont(appFontCat);
-    stat.setSize(100,20);
-    stat.setLocation(150,280);
-    this.add(stat);
+    	stat = new JLabel("State");
+    	stat.setFont(appFontCat);
+    	stat.setSize(100,20);
+    	stat.setLocation(150,280);
+    	this.add(stat);
     
-    //sta = new JTextField();
-    state = new JSpinner(new SpinnerListModel(stateStrings));
-    state.setFont(appFontTxt);
-    state.setSize(190,20);
-    state.setLocation(300, 280);
-    this.add(state);
+    	//sta = new JTextField();
+    	state = new JSpinner(new SpinnerListModel(stateStrings));
+    	state.setFont(appFontTxt);
+    	state.setSize(190,20);
+    	state.setLocation(300, 280);
+    	this.add(state);
     
-    zip = new JLabel("Zip Code");
-    zip.setFont(appFontCat);
-    zip.setSize(100,20);
-    zip.setLocation(150,310);
-    this.add(zip);
+    	zip = new JLabel("Zip Code");
+    	zip.setFont(appFontCat);
+    	zip.setSize(100,20);
+    	zip.setLocation(150,310);
+    	this.add(zip);
     
-    try {
+    	try {
     	MaskFormatter format = new MaskFormatter("#####");
     	zip_1 = new JFormattedTextField(format);
     	format.setPlaceholderCharacter('_');
         zip_1.setFont(appFontTxt);
         zip_1.setSize(190,20);
-        zip_1.setLocation(300, 310);
-    	
-    }
-    catch(ParseException ex){
-    	
-    	
-    }
-    this.add(zip_1);
+        zip_1.setLocation(300, 310);   	
+    	}
+    	catch(ParseException ex){  	
+    	}
+    	this.add(zip_1);
      
-    term = new JCheckBox("Accept Terms And Conditions."); 
-    term.setFont(appFontTxt); 
-    term.setSize(250, 20); 
-    term.setLocation(230, 350); 
-    this.add(term); 
+    	term = new JCheckBox("Accept Terms And Conditions."); 
+    	term.setFont(appFontTxt); 
+    	term.setSize(250, 20); 
+    	term.setLocation(230, 350); 
+    	this.add(term); 
 
-    sub = new JButton("Submit"); 
-    sub.setFont(appFontTxt); 
-    sub.setSize(100, 20); 
-    sub.setLocation(200, 390); 
-    sub.addActionListener(this); 
-    this.add(sub); 
+    	sub = new JButton("Submit"); 
+    	sub.setFont(appFontTxt); 
+    	sub.setSize(100, 20); 
+    	sub.setLocation(200, 390); 
+    	sub.addActionListener(this); 
+    	this.add(sub); 
 
-    reset = new JButton("Reset"); 
-    reset.setFont(appFontTxt); 
-    reset.setSize(100, 20); 
-    reset.setLocation(370, 390); 
-    reset.addActionListener(this); 
-    this.add(reset);
+    	reset = new JButton("Reset"); 
+    	reset.setFont(appFontTxt); 
+    	reset.setSize(100, 20); 
+    	reset.setLocation(370, 390); 
+    	reset.addActionListener(this); 
+    	this.add(reset);
     
-    tout = new JTextArea(); 
-    tout.setFont(appFontTxt); 
-    tout.setSize(300, 400); 
-    tout.setLocation(500, 100); 
-    tout.setLineWrap(true); 
-    tout.setEditable(false); 
-    //this.add(tout); 
+    	tout = new JTextArea(); 
+    	tout.setFont(appFontTxt); 
+    	tout.setSize(300, 400); 
+    	tout.setLocation(500, 100); 
+    	tout.setLineWrap(true); 
+    	tout.setEditable(false); 
+    	//this.add(tout); 
 
-    res = new JLabel(""); 
-    res.setFont(appFontCat); 
-    res.setSize(500, 25); 
-    res.setLocation(100, 500); 
-    this.add(res);
+    	res = new JLabel(""); 
+    	res.setFont(appFontCat); 
+    	res.setSize(500, 25); 
+    	res.setLocation(100, 500); 
+    	this.add(res);
     
-    res1 = new JLabel(""); 
-    res1.setFont(appFontCat); 
-    res1.setSize(500, 25); 
-    res1.setLocation(160, 420); 
-    this.add(res1); 
+    	res1 = new JLabel(""); 
+    	res1.setFont(appFontCat); 
+    	res1.setSize(500, 25); 
+    	res1.setLocation(160, 420); 
+    	this.add(res1); 
 
-    resadd = new JTextArea(); 
-    resadd.setFont(appFontTxt); 
-    resadd.setSize(200, 75); 
-    resadd.setLocation(580, 175); 
-    resadd.setLineWrap(true); 
-    this.add(resadd);
+    	resadd = new JTextArea(); 
+    	resadd.setFont(appFontTxt); 
+    	resadd.setSize(200, 75); 
+    	resadd.setLocation(580, 175); 
+    	resadd.setLineWrap(true); 
+    	this.add(resadd);
     
-    //month.addActionListener(this);
-    //date.addActionListener(this);
+    	//month.addActionListener(this);
+    	//date.addActionListener(this);
     
-    /*
-    fName = new JLabel("Name"); 
-    fName.setFont(new Font("Arial", Font.PLAIN, 20)); 
-    fName.setSize(100, 20); 
-    fName.setLocation(100, 100); 
-    this.add(fName); 
+    	/*
+    	fName = new JLabel("Name"); 
+    	fName.setFont(new Font("Arial", Font.PLAIN, 20)); 
+    	fName.setSize(100, 20); 
+    	fName.setLocation(100, 100); 
+    	this.add(fName); 
 
-    fn = new JTextField(); 
-    fn.setFont(new Font("Arial", Font.PLAIN, 15)); 
-    fn.setSize(190, 20); 
-    fn.setLocation(200, 100); 
-    this.add(fn); 
+    	fn = new JTextField(); 
+    	fn.setFont(new Font("Arial", Font.PLAIN, 15)); 
+    	fn.setSize(190, 20); 
+    	fn.setLocation(200, 100); 
+    	this.add(fn); 
 
-    lName = new JLabel("Mobile"); 
-    lName.setFont(new Font("Arial", Font.PLAIN, 20)); 
-    lName.setSize(100, 20); 
-    lName.setLocation(100, 150); 
-    this.add(lName); 
+    	lName = new JLabel("Mobile"); 
+    	lName.setFont(new Font("Arial", Font.PLAIN, 20)); 
+    	lName.setSize(100, 20); 
+    	lName.setLocation(100, 150); 
+    	this.add(lName); 
 
-    ln = new JTextField(); 
-    ln.setFont(new Font("Arial", Font.PLAIN, 15)); 
-    ln.setSize(150, 20); 
-    ln.setLocation(200, 150); 
-    this.add(ln); 
-    */
+    	ln = new JTextField(); 
+    	ln.setFont(new Font("Arial", Font.PLAIN, 15)); 
+    	ln.setSize(150, 20); 
+    	ln.setLocation(200, 150); 
+    	this.add(ln); 
+    	*/
 
 	}
 	   public void actionPerformed(ActionEvent e) {
