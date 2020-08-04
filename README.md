@@ -1,3 +1,2 @@
-# CV_Java
-- Launch HostGUIApp for the two java files.
-- Remove slashes for the appropriate java file.
+# Coding Portfolio
+- Coding problems from both school and outside of school projects.
