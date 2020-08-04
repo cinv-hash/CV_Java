@@ -14,6 +14,7 @@ public class HostGUIApp extends JFrame{
          setDefaultCloseOperation(EXIT_ON_CLOSE);
          setLayout(new GridLayout(1,1));
          //JPanel jp = new CV_CarSalesJPanel();
+	 //JPanel jp = new CV_ConversionJPanel();
          JPanel jp = new GUIPerson();
          add(jp);
          setSize(WIDTH, HEIGHT);
