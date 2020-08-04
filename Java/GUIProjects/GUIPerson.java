@@ -524,7 +524,7 @@ public class GUIPerson extends JPanel implements ActionListener{
 	                tout.setText(data + data1 + data2 + data3); 
 	                tout.setEditable(false); 
 	                res.setFont(appFontTxt);
-	                res.setText("OCCCPerson is registered sucessfully in the system."); 
+	                res.setText("You are registered sucessfully in the system."); 
 	                centerPanel.add(tout);
 	                centerPanel.add(res);
 	                centerPanel.setVisible(true);
